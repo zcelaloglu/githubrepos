@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Github Repositories</string>
+
+    <string name="button_title">Submit</string>
+    <string name="stargazers_count_title">Stars: </string>
+    <string name="open_issue_count_title">Open Issues: </string>
+
+    <string name="add_to_bookmark">Added to Bookmark</string>
+    <string name="remove_from_bookmark">Removed From Bookmark</string>
+
+</resources>

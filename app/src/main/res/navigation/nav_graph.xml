@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/reposFragment">
+
+    <fragment
+        android:id="@+id/reposFragment"
+        android:name="com.celaloglu.zafer.features.repos.ReposFragment"
+        tools:layout="@layout/fragment_repos">
+
+        <action
+            android:id="@+id/action_to_repo_detail_fragment"
+            app:destination="@id/repoDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/repoDetailFragment"
+        android:name="com.celaloglu.zafer.features.repo_detail.RepoDetailFragment">
+
+        <argument
+            android:name="repo"
+            app:argType="com.celaloglu.zafer.models.ReposItem" />
+    </fragment>
+
+</navigation>

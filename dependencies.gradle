@@ -1,0 +1,66 @@
+ext {
+    //Android Core
+    compileSdkVersion = 29
+    targetSdkVersion = 29
+    minSdkVersion = 21
+    buildToolsVersion = "29.0.2"
+
+    //Presentation
+    appcompatVersion = '1.1.0'
+    androidxCoreKtxVersion = '1.1.0'
+    constraintLayoutVersion = '1.1.3'
+    supportV4Version = '1.0.0'
+    navVersion = '2.1.0'
+    materialVersion = '1.2.0'
+    fragmentKtxVersion = '1.1.0'
+    koinVersion = '2.2.0-alpha-1'
+    lifecycleExtensionsVersion = '2.1.0'
+    recyclerviewAnimationVersion = '3.0.0'
+    navigation = '2.2.2'
+    coroutinesCoreVersion = '1.3.3'
+    glide = '4.11.0'
+
+    //Data
+    retrofitVersion = '2.7.0'
+    gsonVersion = '2.8.6'
+    loggingInterceptorVersion = '4.2.1'
+    roomVersion = '2.2.5'
+
+    appDependencies = [
+            kotlin                 : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion",
+            appCompat              : "androidx.appcompat:appcompat:$appcompatVersion",
+            androidxKtx            : "androidx.core:core-ktx:$androidxCoreKtxVersion",
+            constraintLayout       : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            supportV4              : "androidx.legacy:legacy-support-v4:$supportV4Version",
+            material               : "com.google.android.material:material:$materialVersion",
+            fragmentKtx            : "androidx.fragment:fragment-ktx:$fragmentKtxVersion",
+            koinAndroid            : "org.koin:koin-android:$koinVersion",
+            koinLifeCycleScope     : "org.koin:koin-android-scope:$koinVersion",
+            koinAndroidViewModel   : "org.koin:koin-androidx-viewmodel:$koinVersion",
+            lifecycleExtensions    : "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionsVersion",
+            recyclerviewAnimations : "jp.wasabeef:recyclerview-animators:$recyclerviewAnimationVersion",
+            navigationFragment     : "androidx.navigation:navigation-fragment-ktx:$navigation",
+            navigationUI           : "androidx.navigation:navigation-ui-ktx:$navigation",
+            glide                  : "com.github.bumptech.glide:glide:$glide",
+            glideCompiler          : "com.github.bumptech.glide:compiler:$glide"
+    ]
+
+    dataDependencies = [
+            retrofit             : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitGsonConverter: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            gson                 : "com.google.code.gson:gson:$gsonVersion",
+            room                 : "androidx.room:room-runtime:$roomVersion",
+            roomKtx              : "androidx.room:room-ktx:$roomVersion",
+            roomCompiler         : "androidx.room:room-compiler:$roomVersion",
+            loggingInterceptor   : "com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion",
+            coroutinesCore       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCoreVersion"
+    ]
+
+    domainDependencies = [
+            kotlin              : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            coroutinesCore      : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesCoreVersion",
+            koinAndroid         : "org.koin:koin-android:$koinVersion",
+            koinLifeCycleScope  : "org.koin:koin-android-scope:$koinVersion",
+            koinAndroidViewModel: "org.koin:koin-androidx-viewmodel:$koinVersion"
+    ]
+}
